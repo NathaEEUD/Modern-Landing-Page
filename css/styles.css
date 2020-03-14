@@ -40,6 +40,9 @@ header nav a {
   color: #fff;
   text-decoration: none;
   display: inline-block;
+}
+
+#header__menu {
   animation: moveToRight 1s ease-in;
 }
 
@@ -78,6 +81,36 @@ header .header__texts a {
   border: 1px solid #fff;
   border-radius: 3px;
   animation: moveToUp 1s ease-in;
+}
+
+#header__links {
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f80759,
+    #bc4e9c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.header__menu--close {
+  -webkit-clip-path: circle(0% at 0 0);
+  clip-path: circle(0% at 0 0);
+}
+
+.header__menu--open {
+  -webkit-clip-path: circle(150% at 0 0);
+  clip-path: circle(150% at 0 0);
 }
 
 main .main__wave {
