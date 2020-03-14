@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header {
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89216b, #da4453); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
+  padding: 48px;
+  width: 100%;
+}
+
+header nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  animation: moveToRight 1s ease-in;
+}
+
+header img {
+  display: block;
+  height: 450px;
+  object-fit: cover;
+  width: auto;
+  animation: moveToUp 1s ease-in;
+}
+
+header .header__texts {
+  width: 50%;
+  color: #fff;
+}
+
+header .header__texts h1 {
+  font-size: 80px;
+  animation: moveToLeft 1s ease-in;
+}
+
+header .header__texts h2 {
+  font-size: 30px;
+  animation: moveToRight 1s ease-in;
+}
+
+header .header__texts a {
+  display: inline-block;
+  width: 150px;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  animation: moveToUp 1s ease-in;
+}
+
+main .main__wave {
+  height: 100px;
+  width: 100%;
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89216b, #da4453); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
